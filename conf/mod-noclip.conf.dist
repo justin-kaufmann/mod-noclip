@@ -1,0 +1,44 @@
+[worldserver]
+
+########################################
+# Mod-NoClip
+########################################
+
+#
+#    Module.Enabled
+#        Description: Enable/Disable the module
+#        Default:     1 - Enabled
+#					  0 - Disabled 
+#
+
+Module.Enabled = 1
+
+#
+#    Module.Announce.Enabled
+#        Description: Enable/Disable for module-announcement at players-login
+#        Default:     1 - Enabled  
+#					  0 - Disabled                   
+#
+
+Module.Announce.Enabled = 1
+
+#
+#    Module.AllowedAccountTypeMax
+#        Description: Specifies which account types can use the command .noclip on/off
+#		 	If the value is set to 2 as example, all accounts of type SEC_ADMINISTRATOR also can use this command
+#					  	0 = SEC_PLAYER
+#					  	1 = SEC_MODERATOR
+#					  	2 = SEC_GAMEMASTER
+#					  	3 = SEC_ADMINISTRATOR
+#        Default:     2 
+#                 
+
+Module.AllowedAccountTypeMax = 2
+
+#
+#    Module.TeleportDistance
+#        Description: Specifies the teleport-range (to go through objects or under the ground)
+#        Default:     2.0
+#                 
+
+Module.TeleportDistance = 2.0
