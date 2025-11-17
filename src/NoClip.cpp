@@ -438,7 +438,7 @@ bool NoClipCommand::HandleClipCommand(ChatHandler* AChatHandler)
 
 /* Class: NoClipPlayer */
 
-void NoClipPlayer::OnLogin(Player* APlayer)
+void NoClipPlayer::OnPlayerLogin(Player* APlayer)
 {
     if (APlayer && NC_Enable && NC_Announce_Enable)
     {
@@ -450,7 +450,7 @@ void NoClipPlayer::OnLogin(Player* APlayer)
         }
     }
 }
-void NoClipPlayer::OnBeforeLogout(Player* APlayer)
+void NoClipPlayer::OnPlayerBeforeLogout(Player* APlayer)
 {
     if (APlayer && NC_Enable && APlayer->CustomData.GetDefault<CustomPlayerInformation>("NoClip")->GetFlagNoClipEnabled())
     {
