@@ -114,8 +114,8 @@ class NoClipPlayer : public PlayerScript
 public:
     NoClipPlayer() : PlayerScript("NoClipPlayer") {}
 
-    void OnLogin(Player* APlayer) override;
-    void OnBeforeLogout(Player* APlayer) override;
+    void OnPlayerLogin(Player* APlayer) override;
+    void OnPlayerBeforeLogout(Player* APlayer) override;
 };
 
 void AddNoClipScripts()
